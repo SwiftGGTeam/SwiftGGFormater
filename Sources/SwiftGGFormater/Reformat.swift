@@ -9,7 +9,7 @@ import Foundation
 import Yams
 
 extension SwiftGGFormater {
-    public func refomrat(by strings: [String]) throws -> [[String : String]] {
+    public func reformat(by strings: [String]) throws -> [[String : String]] {
         let strings = strings.uniqued()
 
         guard let loadedDictionary = try Yams.load(yaml: String(contentsOf: file)) as? [[String: String]] else { throw NSError() }
@@ -33,8 +33,6 @@ extension SwiftGGFormater {
         for index in indexs {
             new.append(loadedDictionary[index])
         }
-
-        print(new.count, loadedDictionary.count)
 
         return new
     }

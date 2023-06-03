@@ -9,12 +9,12 @@ public struct SwiftGGFormater {
         self.web = web
     }
 
-    public func formate() async throws {
+    public func format() async throws {
         let data = try await self.fetchWebData()
 
         let parse = try self.parse(data: data)
 
-        let reformat = try self.refomrat(by: parse)
+        let reformat = try self.reformat(by: parse)
 
         let res = self.formYaml(from: reformat)
 

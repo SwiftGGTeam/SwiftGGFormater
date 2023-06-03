@@ -23,7 +23,7 @@ final class SwiftGGFormaterTests: XCTestCase {
 
         let parse = try formater.parse(data: data)
 
-        print(try formater.refomrat(by: parse))
+        print(try formater.reformat(by: parse))
     }
 
     func testAll() async throws {
