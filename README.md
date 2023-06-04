@@ -7,7 +7,7 @@ SwiftGGFormater is a package that can reformat SwiftGG's YAML file, arranging it
 Requirement: macOS 13+. SwiftGGFormater can be installed through [Swift Package Manager](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app).
 
 ```swift
-.package(url: "https://github.com/underthestars-zhy/SwiftGGFormater", .upToNextMajor(from: "1.1.0"))
+.package(url: "https://github.com/SwiftGGTeam/SwiftGGFormater", .upToNextMajor(from: "1.1.0"))
 ```
 
 ## Get Started
